@@ -1,0 +1,75 @@
+:root {
+  --hw-blue: #2c84c7;
+  --hw-cobalt: #030726;
+  --hw-yellow: #f1d74d;
+  --hw-pink: #6c0713b0;
+}
+
+body {
+  background-color: #300006fe;
+  font-family: "Montserrat", sans-serif;
+}
+.bg-cobalt {
+  background-color: var(--hw-cobalt) !important;
+  color: rgb(15, 34, 119);
+}
+.bg-blue {
+  background-color: var(--hw-blue) !important;
+  color: rgb(35, 0, 193);
+}
+.text-yellow {
+  color: var(--hw-yellow) !important;
+}
+.text-pink {
+  color: var(--hw-pink) !important;
+}
+.navbar-brand {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.nav-link {
+  font-family: "Oswald", sans-serif;
+  color: rgba(249, 249, 249, 0.299) !important;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--hw-yellow) !important;
+}
+
+.car-card {
+  transition: transform 0.2s;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.car-card:hover {
+  transform: scale(1.02);
+}
+.card-obtained {
+  border-left: 5px solid var(--hw-blue);
+}
+.card-missing {
+  opacity: 0.8;
+  border-left: 5px solid var(--hw-pink);
+  filter: grayscale(30%);
+}
+
+.loading-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.progress {
+  height: 25px;
+  border-radius: 15px;
+}
+.progress-bar {
+  background-color: var(--hw-blue);
+}
